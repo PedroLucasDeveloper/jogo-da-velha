@@ -1,11 +1,13 @@
 $(function(){
-    //O conteúdo deve ficar aqui
     var vez = 1;
 var vencedor = "";
+var confirmacao = confirm("Click em OK para inserir o nome dos jogadores");
+if(confirmacao == 1){
 var Player1 = prompt("Digite o nome do jogador1");
 alert("Voce sera o X");
 var Player2 = prompt("Digite o nome do jogador2");
 alert("Voce sera a O");
+}
 function casasIguais(a, b, c){
     var casaA = $("#casa"+a);
     var casaB = $("#casa"+b);
